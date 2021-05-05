@@ -12,6 +12,7 @@
     position: absolute;
     width: 376px;
     right: 155px;
+    transition: margin-top .25s;
 }
 
 .wgs__dirt-pile {
