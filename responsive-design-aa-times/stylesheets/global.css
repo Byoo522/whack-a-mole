@@ -9,3 +9,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
 }
+
+button {
+  background-color: #6288a5;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6;
+  padding: 7px 9px;
+  margin: 0 4px;
+  text-transform: uppercase;
+
+  /* height: 25px; */
+  /* line-height: 25px; */
+}
+
+button:hover {
+  background-color: #326891;
+  transition: 3s;
+}
+
+
+
+/* - black: #000000
+- blue: #326891;
+- dark blue: #4d7b9f;
+- dark gray: #6f6f6f;
+- darkest blue: #265e8b;
+- gray: #999;
+- light blue: #6288a5;
+- light gray: #e2e2e2;
+- lightest blue: #f0f8fc;
+- lightest gray: #f7f7f5;
+- white: #ffffff; */

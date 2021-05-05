@@ -6,25 +6,54 @@
 }
 
 .masthead__menu-and-search {
-
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .masthead__actions {
-
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
 }
 
 .masthead__technologies {
-
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .masthead__date {
-
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 3;
 }
 
 .masthead__logo {
-
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
 }
 
 .masthead__paper {
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
 
+.masthead__bars, .masthead__search, .fa-cog {
+  font-size: 11px;
+  padding: 7px 9px;
+
+}
+
+.masthead__bars:hover, .masthead__search:hover, .fa-cog:hover {
+  background-color: #f7f7f5d5;
 }
