@@ -25,27 +25,59 @@
 }
 
 .masthead__technologies {
-  display: grid;
+  display: flex;
   grid-column-start: 2;
   grid-row-start: 2;
+  justify-content: center;
+  text-align: center;
+}
+
+.masthead__technology {
+  margin: 0 4px;
+}
+
+.masthead__technology-list {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  color: #6f6f6f;
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+  /* bottom: 1px;
+  background-color: white;  never-mind, moving on*/
 }
 
 .masthead__date {
-  display: grid;
-  grid-column-start: 1;
+  align-items: flex-end;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  display: flex;
+  font-size: 11px;
   grid-row-start: 3;
+  padding-bottom: 11px;
 }
 
 .masthead__logo {
-  display: grid;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
   grid-column-start: 2;
   grid-row-start: 3;
+  padding-bottom: 11px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .masthead__paper {
-  display: grid;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  align-items: flex-end;
+  display: flex;
+  font-size: 11px;
+  justify-content: flex-end;
   grid-column-start: 3;
   grid-row-start: 3;
+  padding-bottom: 11px;
 }
 
 .masthead__bars, .masthead__search, .fa-cog {
