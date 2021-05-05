@@ -1,8 +1,10 @@
 .wgs {
+    display: inline-block;
     height: 482px;
     position: relative;
     width: 640px;
     background-color: purple;
+    overflow: hidden;
 }
 
 .wgs__mole-head {
@@ -17,4 +19,8 @@
     position: absolute;
     width: 640px;
     bottom: 0;  /* Remember relative and absolute positioning for CoderComedian! */
+}
+
+.wgs__mole-head--hidden {
+    margin-top: 482px;
 }
