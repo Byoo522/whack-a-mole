@@ -1,0 +1,30 @@
+.masthead {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+}
+
+.masthead__menu-and-search {
+
+}
+
+.masthead__actions {
+
+}
+
+.masthead__technologies {
+
+}
+
+.masthead__date {
+
+}
+
+.masthead__logo {
+
+}
+
+.masthead__paper {
+
+}
