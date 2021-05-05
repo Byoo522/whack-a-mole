@@ -12,10 +12,13 @@
 
 
 function popUpRandomMole() {
-    let moleHeads = document.getElementsByClassName('wgs__mole-head');
-
-    let randomNum = getRandomIntInclusive(0, 7);
+    let moleHeads = document.querySelectorAll('.wgs__mole-head:not(.wgs__mole-head--whacked)');
+    let randomNum = getRandomIntInclusive(0, moleHeads.length - 1);
     let currentMole = moleHeads[randomNum]
+    if (!moleHeads.length) {
+        window.alert('YOU WON!')
+        return;
+    }
     currentMole.classList.remove('wgs__mole-head--hidden')
 
     setTimeout(() => {
@@ -55,6 +58,8 @@ window.addEventListener("DOMContentLoaded", () => {
     moleHeads.forEach(mole => {
         mole.addEventListener('click', event => {
             hideMole(mole);
+            mole.classList.add('wgs__mole-head--whacked')
+            console.log('WHACK')
         })
 
     })
